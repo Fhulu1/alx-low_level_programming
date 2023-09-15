@@ -5,17 +5,19 @@
  *
  * Return: Always 0.
  */
-int main(void)
+void print_alphabet_x10(void)
 {
+	int count = 0;
 	char letter;
 
-	for (letter = 'a'; letter <= 'z'; letter++)
-		putchar(letter);
-
-	for (letter = 'A'; letter <= 'Z'; letter++)
-		putchar(letter);
+	while (count++ <= 9)
+	{
+		for (letter = 'a'; letter <= 'z'; letter++)
+			putchar(letter);
+		putchar('\n');
+	}
 
 	putchar('\n');
 
-	return (0);
+
 }
