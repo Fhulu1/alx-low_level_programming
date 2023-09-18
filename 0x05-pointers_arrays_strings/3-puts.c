@@ -14,7 +14,7 @@ int i;
 
 for (i = 0; str[i] != '\0'; i++)
 {
-puts(str[i]);
+_putchar(str[i]);
 }
-puts('\n');
+_putchar('\n');
 }
