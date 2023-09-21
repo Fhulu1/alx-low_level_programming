@@ -8,12 +8,14 @@
  *
  * Return: nothing.
  */
+
 void print_array(int *a, int n)
 {
 int i, b, c;
 
 i = 0;
 b = n - 1;
+
 while (b < c)
 {
 i = *(a + b);
