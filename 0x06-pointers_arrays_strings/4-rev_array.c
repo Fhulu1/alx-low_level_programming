@@ -2,19 +2,22 @@
 #include <stdio.h>
 
 /**
- * print_array: function will print array in reverse
+ * reserve_array - function will print array in reverse
  * @a: an array of integers
  * @n: the number of elements to swap
  *
  * Return: array in reserve
  */
 
-void print_array(int *a, int n)
+void reverse_array(int *a, int n)
 {
 int i;
+int j;
 
-for (i = n - 1; i >= 0; i--)
+for (i = 0; i < n--; i++)
 {
-a++;
+j = a[i];
+a[i] = a[n];
+a[n] = j;
 }
 }
