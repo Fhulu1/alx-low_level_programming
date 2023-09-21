@@ -6,22 +6,15 @@
  * @a: an array of integers
  * @n: the number of elements to swap
  *
- * Return: nothing.
+ * Return: array in reserve
  */
 
 void print_array(int *a, int n)
 {
-int i, b, c;
+int i;
 
-i = 0;
-b = n - 1;
-
-while (b < c)
+for (i = n - 1; i >= 0; i--)
 {
-i = *(a + b);
-*(a + b) = *(a + c);
-*(a + c) = i;
-b++;
-c--;
+a++;
 }
 }

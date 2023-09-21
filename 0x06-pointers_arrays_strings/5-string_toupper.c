@@ -2,12 +2,11 @@
 #include <stdio.h>
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * string_toupper: function returns string in uppercase
+ * char * :input string
+ * Return: The string in uppercase
  */
 
 char *string_toupper(char *)
 {
 
-}
