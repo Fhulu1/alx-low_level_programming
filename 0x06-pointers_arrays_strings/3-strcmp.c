@@ -12,20 +12,18 @@
 
 int _strcmp(char *s1, char *s2)
 {
-int i, d;
-d = 0;
 
-while (d == 0)
+while ((*s1 != '\0' && *s2 != '\0') && *s1 == *s2)
 {
-if (s1[i] < s2[i])
-d = -1;
-else if (s1[i] > s2[i])
-d = 1;
-
-if (s1[i] == '\0')
-break;
-
-i++;
+s1++;
+s2++;
 }
-return (d);
+if (*s1 == *s2)
+{
+return (0);
+}
+else
+{
+return (*s1 - *s2);
+}
 }
