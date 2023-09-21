@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - check the code
+ * print_array: function will print array in reverse
  * @a: an array of integers
  * @n: the number of elements to swap
  *
@@ -10,5 +10,16 @@
  */
 void print_array(int *a, int n)
 {
+int i, b, c;
 
+i = 0;
+b = n - 1;
+while (b < c)
+{
+i = *(a + b);
+*(a + b) = *(a + c);
+*(a + c) = i;
+b++;
+c--;
+}
 }
