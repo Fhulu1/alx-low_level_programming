@@ -2,24 +2,23 @@
 #include <stdio.h>
 
 /**
- * Function to copy string
- * @_strncpy: Function to copy string
- * @dest: character for function
- * @src: character for function
- * Return: this is the return
+ * @_strncpy - Function that copies a string
+ * @dest: input for function
+ * @src: output for function
+ * Return: a copied string
  */
 
 char *_strncpy(char *dest, char *src, int n)
 {
-if (dest == NULL)
-return (NULL);
+int i;
 
-while (src[n] != '\0')
+for (i = 0; i < n && src[i] != '\0'; i++)
 {
-dest[n] = src[n];
-n++;
+dest[i] = src[i];
 }
-dest[n] = '\0';
-
+for (; i < n; i++)
+{
+dest[i] = '\0';
+}
 return (dest);
 }
