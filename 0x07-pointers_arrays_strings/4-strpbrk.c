@@ -17,11 +17,12 @@ while (*s)
 while (accept[j] != '\0')
 {
 if (*s == accept[j])
+return (*s);
 j++;
 }
 j = 0;
 s++;
 }
-return (*s);
+return ('\0');
 }
 
