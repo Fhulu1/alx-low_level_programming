@@ -14,15 +14,12 @@ int j;
 
 while (*s)
 {
-while (accept[j] != '\0')
+for (j = 0; accept[j]; j++)
 {
 if (*s == accept[j])
 return (*s);
-j++;
 }
-j = 0;
 s++;
 }
 return ('\0');
 }
-
